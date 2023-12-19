@@ -1,0 +1,180 @@
+
+ /* thar be fonts  */ 
+
+@font-face {
+  font-family: "helveti";
+  src: url(https://questionaut.neocities.org/font/HelvetiHand.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "helveti";
+  src: url("https://questionaut.neocities.org/font/HelvetihandItalic-Regular.ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "temb";
+  src: url(https://questionaut.neocities.org/font/Temble.ttf) format("truetype");
+}
+        
+  /* basic customization */
+        
+    body{
+    word-wrap:break-word;
+    font-size:15px;
+    font-family: "helveti";
+    text-transform: lowercase;
+    color:black;
+      
+    background-color: #0f130b;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/72/Pink_Sky_Delight.jpg');   
+    background-position: top;
+	  background-repeat: no-repeat;
+	  background-attachment: fixed; }
+
+    a{
+    color:#b619ff;
+    font-weight:bold;
+    text-decoration:underline; 
+    font-family: "helveti"; }
+
+    a:hover{
+    color:black;
+    text-decoration:none;
+    cursor:help;}
+
+    p{
+    margin:0 0 10px 0;
+    padding:10px;}
+
+    ::selection{ 
+    color:white; 
+    background-color:blue;}
+
+    ::-webkit-scrollbar {
+    width: 15px;
+    height: 10px;}
+    
+    ::-webkit-scrollbar-thumb:vertical{
+    background-color: #fff;
+    background-image: url(https://i.imgur.com/Qtm9Z60.png);
+    border-top: 1px solid #bdbdbd;
+    border-left: 1px solid #bdbdbd;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;}
+    
+    ::-webkit-scrollbar-track {
+    background-color: #fff;
+    background-image: url(https://i.imgur.com/IGXGYKz.png);}
+    
+    ::-webkit-scrollbar-button:vertical:increment {
+    background-image: url(https://i.imgur.com/WhC8iy3.png);
+    width: 14px;
+    height: 16px;
+    border-top: 1px solid #bdbdbd;
+    border-left: 1px solid #bdbdbd;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;}
+    
+    ::-webkit-scrollbar-button:vertical:decrement {
+    background-image: url(https://i.imgur.com/fQ18mrR.png);
+    border-top: 1px solid #bdbdbd;
+    border-left: 1px solid #bdbdbd;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 14px;
+    height: 16px;}
+
+        /* end basic customization */
+
+
+        /* sidebar */
+        
+    #side{
+    left:0px;
+    width:225px;
+    height:100%;
+    top:-1px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    padding-top:5px;
+    padding-right:10px;
+    padding-left:5px;
+    background-color: rgba(239, 239, 239, 0.75);
+    box-shadow: 0 0 10px 6px #C0C0C0;
+    border-radius: 5px;
+    position:fixed;}
+
+    #desc{
+    text-align:center;
+    padding:5px;
+    overflow:hidden;
+    margin:10px 0 0 0;
+    display:block;}
+
+    .button{
+    background:transparent;
+    padding:5px;}
+    .button:hover{
+    cursor:help;}
+
+    #table, th, td{ 
+    font-family: "helveti";
+    width:100px;
+    margin:10px 0 0 0;
+    margin-left:-4px;
+    text-align:center;
+    background:transparent;}
+
+    .side img{
+    border:3px ridge white;}
+
+        /* sidebar end */
+
+
+        /* content */
+        
+    #wrapper{
+    left:40%;
+    overflow:auto;
+    position:absolute;
+    padding:5px;
+    top:10px;
+    overflow-x: hidden;
+    overflow-y:auto;}
+
+    #content{
+    text-align:left;
+    background-color: rgba(239, 239, 239, 0.75);
+    box-shadow: 0 0 5px 3px #C0C0C0;
+    border-radius: 5px;
+    width: 575px;
+    padding:15px;
+    }
+
+    #siteupdates {
+    max-height: 10em;
+    overflow: auto;
+    padding: 5px;
+    outline-width: 6px;
+    border-style: inset;
+    }
+
+        /* content end */
+
+
+        /* credit, and pagedoll */
+        
+    #emoticon{
+    margin:20px 0 0 0;
+    font-size:13px;}
+
+    #emoticon a{
+    text-decoration:none;}
+
+    #pagedoll{
+    position:fixed;
+    right:0px;
+    bottom:0px;}
+    
+        /* end credit */
